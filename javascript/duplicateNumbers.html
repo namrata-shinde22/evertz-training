@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Duplicate elements from an array</title>
+  </head>
+  <body>
+    <script>
+      //Method 1
+      var array = [1, 2, 2, 3, 3, 4, 4, 5, 5, 7, 7, 1, 4];
+      function removeDuplicates(array) {
+        for (var i = 0; i < array.length; i++) {
+          for (var j = i + 1; j < array.length; j++) {
+            if (array[i] == array[j]) {
+              for (var k = j; k < array.length; k++) {
+                array[k] = array[k + 1];
+              }
+              j--;
+              array.length--;
+            }
+          }
+        }
+        console.log(array);
+      }
+      removeDuplicates(array);
+
+      // Method 2
+      // using Set method
+      let chars = ["A", "B", "A", "C", "B", "D", "C"];
+      let uniqueChars = [...new Set(chars)];
+
+      console.log(uniqueChars);
+
+      // Method 3
+      // Using Filter Method
+      let animals = [
+        "Lion",
+        "Rabbit",
+        "Mouse",
+        "Monkey",
+        "Lion",
+        "Ape",
+        "Rabbit",
+      ];
+      let usingFilter = () => {
+        return (unique = animals.filter(function (item, index) {
+          return animals.indexOf(item) == index;
+        }));
+      };
+      console.log(usingFilter());
+    </script>
+  </body>
+</html>

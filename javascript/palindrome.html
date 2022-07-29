@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome</title>
+  </head>
+  <body>
+    <script>
+      // // Method 1
+      // var string1 = prompt("Enter String :");
+      // var reverseString1 = string1.split("").reverse().join("");
+      // if (string1 == reverseString1) {
+      //   console.log("It is palindrome");
+      // } else {
+      //   console.log("It is not palindrome");
+      // }
+
+      // Method 2
+      var string1 = prompt("Enter String :");
+      function palindrome(input) {
+        var string2 = input.split("");
+        var array = [];
+        j = 0;
+        for (let i = string2.length; i >= 0; i--) {
+          array[j] = string2[i];
+          j++;
+        }
+        var out = array.join("");
+        if (input == out) {
+          console.log("It is palindrome");
+        } else {
+          console.log("It is not palindrome");
+        }
+      }
+
+      palindrome(string1);
+    </script>
+  </body>
+</html>

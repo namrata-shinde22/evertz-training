@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Array Elements</title>
+  </head>
+  <body>
+    <script>
+      // Build In Methods
+      // using push Method
+      //Add Element to the last
+      let colors = ["Red", "Green", "Yellow", "Black"];
+      let addColor = colors.push("white", "violet");
+      console.log(colors);
+
+      // using unshift method
+      // Add Element at the begining
+      let animals = ["cat", "Dog", "Lion", "Tiger"];
+      let addAnimal = animals.unshift("Rabbit", "Zebra");
+      console.log(animals);
+
+      // using concat Method
+      // Add two array
+      let array1 = ["Red", "Orange", "Green"];
+      let array2 = ["Black", "Yellow"];
+      let arr = array1.concat(array2);
+      console.log(arr);
+
+      // using Splice Method
+      let Colors = ["Red", "Orange", "Green", "Blue"];
+      console.log("Array before splice: " + Colors);
+      Colors.splice(2, 0, "Black", "Yellow");
+      // append new value to the array
+      console.log("Array after splice: " + Colors);
+    </script>
+  </body>
+</html>

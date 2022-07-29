@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Get ID</title>
+  </head>
+  <body>
+    <script>
+      const items = [
+        { id: 1, name: "banana", selected: true },
+        {
+          id: 2,
+          subItems: [
+            { id: "2a", name: "apple", selected: true },
+            { id: "2b", name: "orange", selected: true },
+          ],
+        },
+        { id: 6, name: "watermalon", selected: true },
+        { id: 7, name: "pear", selected: true },
+      ];
+
+      // // Method 1
+
+      // function getSelectedItems(items, selectedItems = []) {
+      //   for (let item of items) {
+      //     if (item.subItems) {
+      //       getSelectedItems(item.subItems, selectedItems);
+      //     } else if (item.selected) {
+      //       selectedItems.push(item.id);
+      //     }
+      //   }
+      //   return selectedItems;
+      // }
+
+      // console.log(getSelectedItems(items));
+
+      // // Method 2
+      // const selectedItemId = items
+      //   .map((item) => item.selected && item.id)
+      //   .filter(Boolean);
+      // console.log(selectedItemId);
+
+      // // Method 3
+      function getId(array) {
+        var output = [];
+
+        for (let i = 0; i < array.length; i++) {
+          output.push(array[i].id);
+        }
+
+        // // Method 4
+        // for (let i = 0; i < array.length; i++) {
+        //   output[i] = array[i].id;
+        // }
+
+        document.write(output);
+      }
+      getId(items);
+    </script>
+  </body>
+</html>
