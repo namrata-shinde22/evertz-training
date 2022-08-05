@@ -1,0 +1,14 @@
+{
+  "country": "IN",
+  "firstName": "John",
+  "lastName": "Deo",
+  "gender": "M",
+  "emailAddress": "johndoe@example.com",
+  "phone": "9999999999",
+  "address": "Area 51",
+  "city": "Tulsa",
+  "state": "Ohklahoma",
+  "pincode": "55555",
+  "aboutmyself": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "tc": false
+}

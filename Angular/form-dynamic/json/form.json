@@ -1,0 +1,186 @@
+[
+  {
+    "controlType": "label",
+    "order": 1,
+    "text": "First Name:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "firstName",
+    "required": true,
+    "type": "text",
+    "order": 2
+  },
+  {
+    "controlType": "label",
+    "order": 3,
+    "text": "Last Name:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "lastName",
+    "required": true,
+    "order": 4,
+    "type": "text"
+  },
+  {
+    "controlType": "label",
+    "order": 5,
+    "text": "Gender:"
+  },
+  {
+    "controlType": "radio",
+    "key": "gender",
+    "type": "radio",
+    "required": true,
+    "order":5,
+    "options": [
+      {
+        "value": "M",
+        "label": "Male"
+      },
+      {
+        "value": "F",
+        "label": "Female"
+      }
+    ]
+  },
+  {
+    "controlType": "label",
+    "order": 7,
+    "text": "Email address:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "emailAddress",
+    "label": "Email",
+    "type": "email",
+    "order": 8
+  },
+
+  {
+    "controlType": "label",
+    "order": 9,
+    "text": "Password:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "password",
+    "label": "Password",
+    "order": 10,
+    "type": "password"
+  },
+
+  {
+    "controlType": "label",
+    "order": 11,
+    "text": "Phone number:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "phone",
+    "label": "Phone number",
+    "order": 12,
+    "type": "number"
+  },
+
+  {
+    "controlType": "label",
+    "order": 13,
+    "text": "Address:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "address",
+    "label": "address",
+    "order": 14,
+    "type": "text"
+  },
+  {
+    "controlType": "label",
+    "order": 15,
+    "text": "City:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "city",
+    "label": "city",
+    "order": 16,
+    "type": "text"
+  },
+  {
+    "controlType": "label",
+    "order": 17,
+    "text": "State:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "state",
+    "label": "state",
+    "order": 18,
+    "type": "text"
+  },
+  {
+    "controlType": "label",
+    "order": 19,
+    "text": "Country:"
+  },
+  {
+    "key": "country",
+    "options": [
+      { "key": "IN", "value": "India" },
+      { "key": "US", "value": "USA" },
+      { "key": "CA", "value": "Canada" }
+    ],
+    "order": 20,
+    "controlType": "dropdown"
+  },
+  {
+    "controlType": "label",
+    "order": 21,
+    "text": "About Myself"
+  },
+  {
+    "controlType": "textarea",
+    "key": "aboutmyself",
+    "label": "aboutmyself",
+    "order": 22
+  },
+  {
+    "controlType": "checkbox",
+    "key": "tc",
+    "label": "Terms & Condition",
+    "order": 23
+  },
+
+  {
+    "controlType":"addressObj",
+    "key":"address",
+    "options":[
+      {
+        "controlType": "textinput",
+        "key": "address",
+        "label": "address",
+        "order": 25,
+        "type": "text",
+        "text": "Address:"
+      },
+      {
+        "controlType": "textinput",
+        "key": "city",
+        "label": "city",
+        "order": 27,
+        "type": "text",
+        "text": "City:"
+      },
+      {
+        "controlType": "textinput",
+        "key": "state",
+        "label": "state",
+        "order": 29,
+        "type": "text",
+        "text": "State:"
+      }
+    ]
+  }
+]

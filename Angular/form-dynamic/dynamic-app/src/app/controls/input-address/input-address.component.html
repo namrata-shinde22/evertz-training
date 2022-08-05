@@ -1,0 +1,10 @@
+<div [formGroup]="form">
+  <input [formControlName]="meta.addressline" [id]="meta.addressline" type="text"/> <br>
+  {{meta.city}}
+  <input [formControlName]="meta.city" [id]="meta.city" type="text" /> <br>
+  {{meta.state}}
+  <input [formControlName]="meta.state" [id]="meta.state" type="text" />
+  <br>
+  {{meta.pincode}}
+  <input [formControlName]="meta.pincode" [id]="meta.pincode" type="number"/>
+</div>
