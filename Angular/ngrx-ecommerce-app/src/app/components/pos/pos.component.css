@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+}
+
+.firstrow {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(black, green, black);
+  padding: 20px;
+}
+.secondrow {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: blue;
+}
+.productList {
+  background-image: linear-gradient(black, purple, black);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

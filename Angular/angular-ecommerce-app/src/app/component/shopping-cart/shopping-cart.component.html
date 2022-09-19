@@ -1,73 +1,3 @@
-<!-- <div class="shopping-cart-conatiner">
-  <div class="title">My Cart</div>
-  <div class="header">
-    <div class="img"></div>
-    <div class="name">Product</div>
-    <div class="price">Price</div>
-    <div class="quantity">Quantity</div>
-    <div class="total">Total</div>
-    <div class="close"></div>
-  </div>
-
-  <div class="body">
-    <div class="img">
-      <img class="productImg" src="" alt="Photo of a Shiba Inu" />
-    </div>
-    <div class="name">
-      <h3>NIKE FREE RN 2019 ID</h3>
-      <p>Far far away, behind the word mountains, far from the countries</p>
-    </div>
-    <div class="price">$4.90</div>
-    <div class="quantity">
-      <mat-icon class="close-icon">add</mat-icon
-      ><input
-        style="height: 20px; margin-right: 5px; text-align: center"
-        type="text"
-        size="1"
-        value="1"
-      />
-      <mat-icon class="close-icon">remove</mat-icon>
-    </div>
-    <div class="total">$4.90</div>
-    <div class="close">
-      <mat-icon class="close-icon">close</mat-icon>
-    </div>
-  </div>
-
-  <div class="cart-total">
-    <h2>CART TOTALS</h2>
-    <hr />
-    <table style="width: 100%">
-      <tr>
-        <td>Subtotal</td>
-        <td>$20.60</td>
-      </tr>
-      <tr>
-        <td>Delivery</td>
-        <td>$0.60</td>
-      </tr>
-      <tr>
-        <td>Discount</td>
-        <td>$0.60</td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <hr />
-        </td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td><b>$10.60</b></td>
-      </tr>
-    </table>
-    <div class="checkout-button">
-      <button mat-stroked-button color="primary" class="button full-button">
-        PROCEED TO CHECKOUT
-      </button>
-    </div>
-  </div>
-</div> -->
-
 <ng-container *ngIf="products.length != 0">
   <div class="container">
     <div class="card-table">
@@ -151,14 +81,14 @@
 <ng-container *ngIf="products.length == 0">
   <div class="container">
     <div class="card">
-      <h4 class="card-title">My Cart</h4>
+      <h4 class="card-title" id="cart">My Cart</h4>
     </div>
     <div class="center">
       <img
         src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
         alt=""
       />
-      <h4>Your cart is empty</h4>
+      <h4 id="emptycart">Your cart is empty</h4>
       <h6>Add item to it now</h6>
       <!-- <button>Shop Now</button> -->
       <button

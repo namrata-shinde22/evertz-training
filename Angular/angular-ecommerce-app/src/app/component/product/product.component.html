@@ -41,12 +41,11 @@
 </div>
 
 <div class="body">
-  <mat-card
+  <div
     class="example-card"
     *ngFor="let item of filterCategory | filter: searchKey:'title'"
-    (click)="addtocart(item)"
   >
-    <mat-card-content>
+    <!-- <mat-card-content>
       <img src="{{ item.image }}" alt="" />
       <p
         style="
@@ -76,6 +75,11 @@
         ADD TO CART
       </button>
       <button mat-raised-button class="share" color="accent">SHARE</button>
-    </mat-card-actions>
-  </mat-card>
+    </mat-card-actions> -->
+    <app-product-item
+      [items]="item"
+      (addtoCart)="addtocart(item)"
+    ></app-product-item>
+    <!-- <app-product-item [items]="filterCategory"></app-product-item> -->
+  </div>
 </div>

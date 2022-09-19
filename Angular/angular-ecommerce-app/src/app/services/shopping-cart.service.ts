@@ -7,16 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 export class ShoppingCartService {
   public cartItemList: any = [];
   public productList = new BehaviorSubject<any>([]);
-  public search = new BehaviorSubject<string>('');
+
   constructor() {}
 
   getProducts() {
     return this.productList.asObservable();
-  }
-
-  setPeoduct(product: any) {
-    this.cartItemList.push(...product);
-    this.productList.next(product);
   }
 
   addtoCart(product: any) {

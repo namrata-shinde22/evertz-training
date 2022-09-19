@@ -1,0 +1,25 @@
+<!-- <div >
+    <app-product-list *ngFor="let item of products$ | async" [product]="item" ></app-product-list>
+</div> -->
+
+<div class="example-sidenav-content">
+  <mat-card class="example-card" *ngFor="let product of products$ | async">
+    <img mat-card-image src="{{ product.image }}" alt="{{ product.title }}" />
+    <mat-card-header>
+      <mat-card-title class="title">{{ product.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p
+        style="
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100ch;
+        "
+      >
+        {{ product.description }}
+      </p>
+      <p><strong>Price:</strong>{{ product.price | currency: "INR" }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+    <div class="firstrow">
+      <app-search class="search"></app-search>
+    </div>
+    <div class="secondrow">
+      <app-breadcrumbs></app-breadcrumbs>
+    </div>
+    <div class="productList">
+      <app-product-list
+        *ngFor="let item of filterCategory | async"
+        [product]="item"
+      ></app-product-list>
+    </div>
+  </div>
+  <!-- <div>
+    <app-cart></app-cart>
+  </div> -->
+</div>

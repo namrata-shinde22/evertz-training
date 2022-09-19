@@ -1,0 +1,25 @@
+<mat-toolbar class="primary">
+  <div>Shopping Mart</div>
+
+  <button mat-icon-button routerLink="customer" class="customerButton">
+    <mat-icon class="example-icon">supervisor_account</mat-icon> Customer
+  </button>
+
+  <button mat-icon-button routerLink="product" class="productButton">
+    <mat-icon class="example-icon">store</mat-icon> Products
+  </button>
+
+  <button mat-icon-button routerLink="order" class="orderButton">
+    <mat-icon class="example-icon"> local_shipping</mat-icon> Order
+  </button>
+
+  <button mat-icon-button routerLink="pos" class="cartButton">
+    <mat-icon class="example-icon">storage</mat-icon> POS
+  </button>
+
+  <button mat-icon-button routerLink="cart" class="cartButton">
+    <mat-icon class="example-icon">shopping_cart</mat-icon>Cart
+    <span id="cartItem" matBadge="{{ cartItems }}" matBadgeOverlap="false">
+    </span>
+  </button>
+</mat-toolbar>

@@ -1,0 +1,27 @@
+<ng-container *ngIf="products.length != 0">
+  <mat-card class="example-card">
+    <img mat-card-image src="{{ products.image }}" alt="{{ products.title }}" />
+    <div>
+      <h4
+        style="
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 30ch;
+        "
+      >
+        {{ products.title }}
+      </h4>
+      <p><strong>Price:</strong>{{ products.price | currency: "INR" }}</p>
+      &nbsp;
+      <button
+        mat-flat-button
+        color="primary"
+        (click)="onDeletebtn()"
+        color="warn"
+      >
+        Delete
+      </button>
+    </div>
+  </mat-card>
+</ng-container>

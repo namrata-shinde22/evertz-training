@@ -1,0 +1,54 @@
+.item img {
+  width: 64px;
+}
+.item {
+  margin: 0px px;
+  text-align: center;
+}
+.item a:hover {
+  color: rgb(80, 84, 211);
+}
+h6 {
+  margin-top: 0px;
+}
+
+.card {
+  padding: 20px;
+  margin: 50px;
+  width: 20rem;
+}
+.example-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+.title {
+  color: rgb(80, 84, 211);
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.example-card {
+  max-width: 300px;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.body {
+  flex: 6;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

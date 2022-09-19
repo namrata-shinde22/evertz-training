@@ -1,0 +1,29 @@
+<div class="container">
+  <div>
+    <div *ngIf="showDetails">
+      <app-cart-total
+        [grandTotal]="grandTotal"
+        [products]="products$"
+      ></app-cart-total>
+    </div>
+
+    <button
+      *ngIf="!showDetails"
+      (click)="showHideForm()"
+      mat-flat-button
+      color="accent"
+      class="btn"
+    >
+      Payment
+    </button>
+  </div>
+  <div>
+    <div class="cart-item">
+      <app-cart-item
+        *ngFor="let item of products$ | async"
+        [products]="item"
+        (onDelete)="onDelete(item.id)"
+      ></app-cart-item>
+    </div>
+  </div>
+</div>

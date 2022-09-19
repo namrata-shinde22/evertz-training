@@ -1,0 +1,47 @@
+.topdiv {
+  margin: 50px;
+}
+
+.example-card {
+  width: 300px;
+  height: 350px;
+  padding-top: 30px;
+  margin: 0px 5px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.example-card img {
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-drawer {
+  position: fixed;
+  background-color: rgb(236, 236, 236);
+}
+
+/* .example-sidenav-content:first-child {
+  margin: 10px 5px 5px 5px;
+} */
+
+.list-width {
+  width: 200px;
+}
+
+.list-item:hover {
+  background-color: rgba(83, 83, 83, 0.178);
+  cursor: pointer;
+}
+
+.example-sidenav-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* overflow-y: scroll; */
+}
+
+/*  */

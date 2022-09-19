@@ -1,0 +1,38 @@
+<mat-card class="example-card">
+  <mat-card-content>
+    <img src="{{ items.image }}" alt="" />
+    <p
+      style="
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100ch;
+      "
+      class="title"
+    >
+      {{ items.title }}
+    </p>
+    <p
+      style="
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100ch;
+      "
+    >
+      {{ items.description }}
+    </p>
+    <p>{{ items.price | currency: "INR" }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      color="primary"
+      class="button"
+      (click)="addtocart()"
+    >
+      ADD TO CART
+    </button>
+    <button mat-raised-button class="share" color="accent">SHARE</button>
+  </mat-card-actions>
+</mat-card>

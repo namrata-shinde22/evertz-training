@@ -32,10 +32,6 @@ export class ProductComponent implements OnInit {
         Object.assign(a, { quantity: 1, total: a.price });
       });
     });
-
-    this.shoppingCartService.search.subscribe((val: any) => {
-      this.searchKey = val;
-    });
   }
 
   addtocart(item: any) {

@@ -1,0 +1,10 @@
+<div *ngFor="let p of orderDetails$ | async">
+  <mat-card>
+    <p>Customer Name {{ p.name }}</p>
+    <p>Mobile Number {{ p.mobileNo }}</p>
+    <div *ngFor="let item of p.details">
+      <p>{{ item.title }}</p>
+      <p>Price : {{ item.price | currency: "INR" }}</p>
+    </div>
+  </mat-card>
+</div>

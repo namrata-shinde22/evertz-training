@@ -13,6 +13,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MaterialExampleModule } from '../material.module';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ProductItemComponent } from './component/product-item/product-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { FooterComponent } from './component/footer/footer.component';
     ShoppingCartComponent,
     HeaderComponent,
     FooterComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<div class="payment">
+  <form [formGroup]="formData">
+    <div>
+      <input type="text" formControlName="name" placeholder="Name" />
+    </div>
+    <div>
+      <input
+        type="number"
+        formControlName="mobileNo"
+        placeholder="Mobile Number"
+      />
+    </div>
+    <button
+      (click)="addOrderDetails()"
+      mat-flat-button
+      color="primary"
+      class="btn"
+    >
+      Add Details
+    </button>
+  </form>
+</div>
