@@ -14,6 +14,7 @@ export class ProductListComponent implements OnInit {
   constructor(private store: Store) {}
 
   ngOnInit(): void {}
+
   // cart
   addtocart(data) {
     const cart: Product = {
